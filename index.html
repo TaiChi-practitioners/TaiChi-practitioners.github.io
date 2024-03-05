@@ -6,6 +6,50 @@
         <title>TaiChi-practitioners</title>
         <link rel="icon" href=".\logo.ico" type="image/ico">
     </head>
+<!--  头部 -->
+<div class="container logo-search">
+
+  <div class="col search row-search-mobile">
+    <form action="/plus/search.php">
+      <input class="placeholder" placeholder="搜索……" name="keyword" id="keyword" type="text" autocomplete="off">
+      
+    </form>
+  </div>
+
+  <div class="row">
+    <div class="col logo">
+      <h1><a href="/">健康生活</a></h1>
+    </div>
+        
+    <div class="col search search-desktop last">
+      <div class="search-input">
+      <form action="/plus/search.php">
+        <input name="keyword" id="keyword" type="text" class="placeholder" placeholder="搜索……" autocomplete="off" style="height: 44px;">
+      </form>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 导航栏 -->
+<div class="container navigation">
+	<div class="row">
+		<div class="col nav">
+			<ul id="index-nav">
+			    
+				<li><a class='current' href='/' >健康生活百科</a></li>
+				
+				<li><a href="/disease/" title="常见疾病/症状">常见疾病/症状</a></li>
+
+				
+				<li><a href="/bookmark.html" title="书签">书签</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
 <ul>
   <li> <a href="https://aspoem.com/author">古诗学习</a> </li>
 <li> <a href="https://mp.weixin.qq.com/s?__biz=MzU3NDcyMzg1Mg==&mid=2247568732&idx=3&sn=7dd6b7788951b77d7f135f32c48b4084&chksm=fd2d8f3fca5a062927a4682d1213d9ec0e86d4cb7136f94da43c8f3aaa3b8bfc3f09da54a1f1&scene=21#wechat_redirect">外研一</a> </li>
@@ -146,6 +190,72 @@
         })();    
     </script>
 </body>
+
+        <!-- 底部 -->
+
+<div id="footer" class="mar-t50">
+
+    <div style="text-align: center;margin: 0 auto;">
+       友情链接：
+     <a href='http://www.6qeu.cn' target='_blank'>郑州心理医院</a> <a href='http://www.kangzhengguke.com' target='_blank'>德州康正骨科医院</a>  
+    </div>
+     
+   
+   <div class="w-1000 copyright">
+     Copyright &copy;   Healthy Life 
+   </div>
+  </div>
+  <div class="fixed-btn">
+    <a class="go-top" href="javascript:void(0)" title="返回顶部"> <i class="fa fa-angle-up"></i></a>
+    
+    <a class="writer" style="display:none" href="javascript:void(0)" title="标记/收藏"><i class="fa fa-star" aria-hidden="true"></i></a>
+    <!-- 
+    <a class="qrcode" href="javascript:void(0)" title="关注我们"><i class="fa fa-qrcode"></i></a>
+    <div id="bottom-qrcode" class="modal panel-modal hide fade in">
+      <h4>微信关注</h4>
+      <div class="panel-body"><img alt="微信关注" width="128" height="128" src="wp-content/themes/runoob/assets/images/qrcode.png"></div> 
+    </div>
+    -->
+  </div>
+
  
+
+
+<script src="/templets/default/js/run_prettify.js"></script>
+<script src="/templets/default/js/main.min.js"></script>
+
+<script type="text/javascript">
+        window.onscroll = function () {
+            var topScroll = get_scrollTop_of_body(); //滚动的距离,距离顶部的距离
+            var bignav = document.getElementById("bignav"); //获取到导航栏id
+            if (topScroll > 250) { //当滚动距离大于250px时执行下面的东西
+                bignav.style.position = 'fixed';
+                bignav.style.top = '0px';
+                bignav.style.right = '30px';
+                bignav.style.zIndex = '9999';
+            } else { //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+                bignav.style.position = 'static';
+            }
+        }
+        /*解决浏览器兼容问题*/
+        function get_scrollTop_of_body() {
+            var scrollTop;
+            if (typeof window.pageYOffset != 'undefined') { //pageYOffset指的是滚动条顶部到网页顶部的距离 
+                scrollTop = window.pageYOffset;
+            } else if (typeof document.compatMode != 'undefined' && document.compatMode != 'BackCompat') {
+                scrollTop = document.documentElement.scrollTop;
+            } else if (typeof document.body != 'undefined') {
+                scrollTop = document.body.scrollTop;
+            }
+            return scrollTop;
+        }
+    </script>
+
+
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id: "JebpiJaaCxBQqjtr",ck: "JebpiJaaCxBQqjtr"})</script>
+
+
+</body>
 </html>
 
